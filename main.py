@@ -1,5 +1,6 @@
 import numpy as np
 from mlxtend.data import loadlocal_mnist
+from tensorflow import keras
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Dense, Flatten
 from tensorflow.keras.utils import to_categorical
@@ -9,6 +10,9 @@ def ExtractAndReshape(imagesPath, labelsPath):
     images, images_labels = loadlocal_mnist(
         images_path=imagesPath,
         labels_path=labelsPath)
+
+    images = images.reshape(len(images), 28, 28)
+    images = np.array(images)
     return images, images_labels
 
 
@@ -33,19 +37,27 @@ num_filters = 8
 filter_size = 3
 pool_size = 2
 
+optimizer = keras.optimizers.SGD(
+    learning_rate=0.01, momentum=0.0, nesterov=False, name="SGD")
+
 
 # Build the model.
 model = Sequential([
-    Conv2D(num_filters, filter_size, input_shape=(28, 28, 1)),
+    Conv2D(num_filters, filter_size, input_shape=(
+        28, 28, 1), activation='relu'),
+    MaxPooling2D(pool_size=pool_size),
+    Conv2D(num_filters, filter_size, input_shape=(
+        28, 28, 1), activation='relu'),
     MaxPooling2D(pool_size=pool_size),
     Flatten(),
-    Dense(10, activation='ReLU'),
+    Dense(32, activation='relu'),
+    Dense(10, activation='softmax'),
 ])
 
 
 # Compile the model.
 model.compile(
-    'adam',
+    optimizer=optimizer,
     loss='categorical_crossentropy',
     metrics=['accuracy'],
 )
