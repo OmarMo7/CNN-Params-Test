@@ -38,6 +38,22 @@ pool_size = 2
 model = Sequential([
     Conv2D(num_filters, filter_size, input_shape=(28, 28, 1)),
     MaxPooling2D(pool_size=pool_size),
-    Flatten(2),
+    Flatten(),
     Dense(10, activation='softmax'),
 ])
+
+
+# Compile the model.
+model.compile(
+    'adam',
+    loss='categorical_crossentropy',
+    metrics=['accuracy'],
+)
+
+# Train the model.
+model.fit(
+    train_images,
+    to_categorical(train_labels),
+    epochs=3,
+    validation_data=(test_images, to_categorical(test_labels)),
+)
