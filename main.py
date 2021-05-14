@@ -39,7 +39,7 @@ model = Sequential([
     Conv2D(num_filters, filter_size, input_shape=(28, 28, 1)),
     MaxPooling2D(pool_size=pool_size),
     Flatten(),
-    Dense(10, activation='softmax'),
+    Dense(10, activation='ReLU'),
 ])
 
 
