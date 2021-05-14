@@ -21,3 +21,8 @@ test_images, test_labels = ExtractAndReshape(
 # Normalize the images.
 train_images = (train_images / 255) - 0.5
 test_images = (test_images / 255) - 0.5
+
+
+# Reshape the images.
+train_images = np.expand_dims(train_images, axis=3)
+test_images = np.expand_dims(test_images, axis=3)
