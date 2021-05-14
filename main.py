@@ -16,3 +16,8 @@ train_images, train_labels = ExtractAndReshape(
     "train-images.idx3-ubyte", "train-labels.idx1-ubyte")
 test_images, test_labels = ExtractAndReshape(
     "t10k-images.idx3-ubyte", "t10k-labels.idx1-ubyte")
+
+
+# Normalize the images.
+train_images = (train_images / 255) - 0.5
+test_images = (test_images / 255) - 0.5
