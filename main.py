@@ -66,6 +66,16 @@ model.compile(
 model.fit(
     train_images,
     to_categorical(train_labels),
-    epochs=3,
+    epochs=5,
     validation_data=(test_images, to_categorical(test_labels)),
 )
+
+
+# Predict on the first 5 test images.
+predictions = model.predict(test_images[:5])
+
+# Print our model's predictions.
+print(np.argmax(predictions, axis=1))  # [7, 2, 1, 0, 4]
+
+# Check our predictions against the ground truths.
+print(test_labels[:5])  # [7, 2, 1, 0, 4]
