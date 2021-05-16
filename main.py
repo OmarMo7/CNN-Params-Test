@@ -1,31 +1,19 @@
 import numpy as np
-from mlxtend.data import loadlocal_mnist
+import mnist
 from tensorflow import keras
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Dense, Flatten
 from tensorflow.keras.utils import to_categorical
 
 
-def ExtractAndReshape(imagesPath, labelsPath):
-    images, images_labels = loadlocal_mnist(
-        images_path=imagesPath,
-        labels_path=labelsPath)
-
-    images = images.reshape(len(images), 28, 28)
-    images = np.array(images)
-    return images, images_labels
-
-
-train_images, train_labels = ExtractAndReshape(
-    "train-images.idx3-ubyte", "train-labels.idx1-ubyte")
-test_images, test_labels = ExtractAndReshape(
-    "t10k-images.idx3-ubyte", "t10k-labels.idx1-ubyte")
-
+train_images = mnist.train_images()
+train_labels = mnist.train_labels()
+test_images = mnist.test_images()
+test_labels = mnist.test_labels()
 
 # Normalize the images.
 train_images = (train_images / 255) - 0.5
 test_images = (test_images / 255) - 0.5
-
 
 # Reshape the images.
 train_images = np.expand_dims(train_images, axis=3)
@@ -67,7 +55,6 @@ model.fit(
     train_images,
     to_categorical(train_labels),
     epochs=5,
-    batch_size=32,
     validation_data=(test_images, to_categorical(test_labels)),
 )
 
