@@ -28,13 +28,15 @@
 1. Final accuracy of the model and the accuracy in the first 5 epoch:.
 
 - Final accuracy: 0.9674
-- 0.5262
-- 0.9304
-- 0.9513
-- 0.9599
-- 0.9674
+- First 5 epochs:
+  - 0.5262
+  - 0.9304
+  - 0.9513
+  - 0.9599
+  - 0.9674
 
 2. The number of parameters in the model:.
+   **I do not know**
 
 3. The average time to train in each epoch:.
    6ms
