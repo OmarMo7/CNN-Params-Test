@@ -55,6 +55,7 @@ model.fit(
     train_images,
     to_categorical(train_labels),
     epochs=5,
+    batch_size=32,
     validation_data=(test_images, to_categorical(test_labels)),
 )
 
