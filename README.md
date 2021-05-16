@@ -17,7 +17,8 @@
   - Layer3: FCLayer with 32 units and activation of _relu_
 
 - Activation _softmax_ layer
-- Epochs: 3
+- Epochs: 5
+- Batch Size: 32
 
 # Initial testing with the basic structure
 
@@ -27,13 +28,13 @@
 
 1. Final accuracy of the model and the accuracy in the first 5 epoch:.
 
-- Final accuracy: 0.9674
 - First 5 epochs:
-  - 0.5262
-  - 0.9304
-  - 0.9513
-  - 0.9599
-  - 0.9674
+  - 0.4997
+  - 0.9307
+  - 0.9493
+  - 0.9580
+  - 0.9649
+- Final accuracy: 0.9649
 
 2. The number of parameters in the model:.
    **I do not know**
