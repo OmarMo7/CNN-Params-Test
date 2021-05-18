@@ -37,7 +37,7 @@
 - Final accuracy: 0.9649
 
 2. The number of parameters in the model:.
-   **I do not know**
+   7,426
 
 3. The average time to train in each epoch:.
    6ms 3ms/step
@@ -82,7 +82,7 @@
 - Final accuracy: 0.9805
 
 2. The number of parameters in the model:.
-   **I do not know**
+   7,426
 
 3. The average time to train in each epoch:.
    6ms 3ms/step
@@ -126,7 +126,7 @@
 - Final accuracy: 0.9818
 
 2. The number of parameters in the model:.
-   **I do not know**
+   7,426
 
 3. The average time to train in each epoch:.
    6ms 3ms/step
@@ -169,7 +169,7 @@
 - Final accuracy: 0.9926
 
 2. The number of parameters in the model:.
-   **I do not know**
+   7,426
 
 3. The average time to train in each epoch:.
    5s 3ms/step
@@ -212,7 +212,7 @@
 - Final accuracy: 0.9912
 
 2. The number of parameters in the model:.
-   **I do not know**
+   7,426
 
 3. The average time to train in each epoch:.
    5s 3ms/step
@@ -255,7 +255,7 @@
 - Final accuracy: 0.9902
 
 2. The number of parameters in the model:.
-   **I do not know**
+   7,426
 
 3. The average time to train in each epoch:.
    5s 3ms/step
@@ -298,7 +298,7 @@
 - Final accuracy: 0.9796
 
 2. The number of parameters in the model:.
-   **I do not know**
+   7,794
 
 3. The average time to train in each epoch:.
    5s 3ms/step
@@ -331,7 +331,7 @@
 
 ## Test 8
 
-### Testing with 2 CNN layers and 2 FC layers 32,16
+### Testing with 2 CNN layers and 2 FC layers 32,16 _0.05_
 
 1. Final accuracy of the model and the accuracy in the first 5 epoch:.
 
@@ -344,7 +344,7 @@
 - Final accuracy: 0.9937
 
 2. The number of parameters in the model:.
-   **I do not know**
+   7,794
 
 3. The average time to train in each epoch:.
    5s 3ms/step
@@ -390,7 +390,7 @@
 - Final accuracy: 0.9977
 
 2. The number of parameters in the model:.
-   **I do not know**
+   37,058
 
 3. The average time to train in each epoch:.
    5s 3ms/step
@@ -438,7 +438,7 @@
 - Final accuracy: 0.9786
 
 2. The number of parameters in the model:.
-   **I do not know**
+   13,066
 
 3. The average time to train in each epoch:.
    6s 3ms/step
@@ -490,7 +490,7 @@
 - Final accuracy: 0.9974
 
 2. The number of parameters in the model:.
-   **I do not know**
+   37,058
 
 3. The average time to train in each epoch:.
    3s 3ms/step
@@ -538,7 +538,7 @@
 - Final accuracy: 0.9942
 
 2. The number of parameters in the model:.
-   **I do not know**
+   37,058
 
 3. The average time to train in each epoch:.
    3s 3ms/step
@@ -586,7 +586,7 @@
 - Final accuracy: 0.9956
 
 2. The number of parameters in the model:.
-   **I do not know**
+   37,058
 
 3. The average time to train in each epoch:.
    5s 3ms/step
@@ -634,7 +634,7 @@
 - Final accuracy: 0.9999
 
 2. The number of parameters in the model:.
-   **I do not know**
+   37,058
 
 3. The average time to train in each epoch:.
    5s 3ms/step
@@ -682,7 +682,7 @@
 - Final accuracy: 0.9980
 
 2. The number of parameters in the model:.
-   **I do not know**
+   37,058
 
 3. The average time to train in each epoch:.
    5s 3ms/step
@@ -730,7 +730,7 @@
 - Final accuracy: 0.9630
 
 2. The number of parameters in the model:.
-   **I do not know**
+   37,058
 
 3. The average time to train in each epoch:.
    5s 3ms/step
@@ -778,7 +778,7 @@
 - Final accuracy: 0.9999
 
 2. The number of parameters in the model:.
-   **I do not know**
+   37,058
 
 3. The average time to train in each epoch:.
    5s 3ms/step
@@ -826,7 +826,7 @@
 - Final accuracy: 0.9696
 
 2. The number of parameters in the model:.
-   **I do not know**
+   37,058
 
 3. The average time to train in each epoch:.
    6s 3ms/step
@@ -874,7 +874,7 @@
 - Final accuracy: 0.9495
 
 2. The number of parameters in the model:.
-   **I do not know**
+   37,058
 
 3. The average time to train in each epoch:.
    6s 3ms/step
@@ -922,7 +922,7 @@
 - Final accuracy: 0.9604
 
 2. The number of parameters in the model:.
-   **I do not know**
+   37,058
 
 3. The average time to train in each epoch:.
    6s 3ms/step
@@ -970,7 +970,7 @@
 - Final accuracy: 0.9867
 
 2. The number of parameters in the model:.
-   **I do not know**
+   37,058
 
 3. The average time to train in each epoch:.
    6s 3ms/step
