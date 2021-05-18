@@ -25,8 +25,8 @@ num_filters = 8
 filter_size = 3
 pool_size = 2
 
-optimizer = keras.optimizers.SGD(
-    learning_rate=0.01, momentum=0.0, nesterov=False, name="SGD")
+optimizer = keras.optimizers.Adagrad(
+    learning_rate=0.05, name="Adagrad")
 
 
 # Build the model.
@@ -38,7 +38,9 @@ model = Sequential([
         28, 28, 1), activation='relu'),
     MaxPooling2D(pool_size=pool_size),
     Flatten(),
-    Dense(32, activation='relu'),
+    Dense(128, activation='tanh'),
+    Dense(64, activation='tanh'),
+    Dense(32, activation='tanh'),
     Dense(10, activation='softmax'),
 ])
 
@@ -54,7 +56,7 @@ model.compile(
 model.fit(
     train_images,
     to_categorical(train_labels),
-    epochs=5,
+    epochs=20,
     batch_size=32,
     validation_data=(test_images, to_categorical(test_labels)),
 )
