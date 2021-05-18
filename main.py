@@ -44,6 +44,7 @@ model = Sequential([
     Dense(10, activation='softmax'),
 ])
 
+model.summary()
 
 # Compile the model.
 model.compile(
